@@ -1,0 +1,638 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body,html{
+    /* height: 100vh;
+    width: 100vh; */
+    font-family: 'Roboto', sans-serif;
+    /* background-color: burlywood; */
+    /* background: url("./images/main_bg.jpg"); */
+}
+h2{
+    color:white;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+}
+
+#navbar{
+    display:flex;
+    background-color: black;
+    color: white;
+
+}
+#logo{
+    margin-left: 10px;
+}
+#list{
+    /* align-self: flex-end; */
+    margin-left: auto;
+    padding-top: 10px;
+    
+}
+
+ul{
+    display:flex;
+    /* //justify-content: flex-end;
+    // align-items: flex-end; */
+    /* align-content: flex-end; */
+    font-size: 20px;
+    /* color:white; */
+    height:40px;
+    /* margin: 17px; */
+    
+}
+a{
+    text-decoration: none;
+    padding:18px;
+    color:white;
+    
+}
+li{
+    color:white;
+    list-style: none;
+
+}
+
+#logo {
+    height:40px;
+    width:40px;
+}
+
+#home{
+    height:400px;
+    background: url("./images/Home/main.jpg") no-repeat center center/cover;
+    margin-bottom: 60px;
+    color:black;
+    opacity: .8;
+}
+
+
+#msg{
+    position: relative;
+    top:100px;
+    font-size: 60px;
+    /* color: black; */
+    color:white;
+    /* animation-name: example; */
+    animation-name: example;
+    animation-duration: 3s;
+}
+@keyframes example{
+    0% { font-size:0px;top:0px;}
+    /* 25% { font-size:15px;}*/
+    /* 50% { font-size:30px;top:50px;} */
+  /*  75% { font-size:45px;} */
+    100% { font-size:60px;top:100px;}
+
+}
+
+@keyframes example1{
+    0% { font-size:3px;}
+    /* 25% { font-size:15px;}
+
+    35% { font-size:20px;}
+    50% { font-size:25px;}
+    
+    60% { font-size:30px;}
+    90% { font-size:35px;}
+     */
+    100% { font-size:30px;}
+    
+
+}
+
+#clothes img{
+    height:500px;
+}
+
+#clothes h1{
+    text-align: center;
+}
+.img_card{
+    border: 2px solid black;
+    background-color: rgb(185, 203, 204);
+}
+
+#heading{
+    color:black;
+    font-size: 30px;;
+}
+
+#pic{
+    position: relative;
+    left: 133px;
+    height:400px;
+    width:400px;
+    margin-left: 60px  ;
+        /* border: 2px solid red; */
+}
+
+
+#pic > img:nth-of-type(1)  {
+    position: absolute;
+    height:400px;
+    width:300px;
+    top:0px;
+    left: 0px;
+    z-index: 1;
+    display: inline-block;
+    
+}
+
+#pic > img:nth-of-type(2)  {
+    position: absolute;
+    height:400px;
+    width:300px;
+    top:0px;
+    left: 20px;
+    z-index: -1;
+    display: inline-block;
+    
+}
+
+#pic > img:nth-of-type(3)  {
+    position: absolute;
+    display: inline-block;
+    height:400px;
+    width:300px;
+    top:0px;
+    left: 50px;
+    z-index: -2;
+    
+}
+
+#image_swap{
+    position: relative;
+    height:500px;
+    width:1000px;
+    /* border: 2px solid black; */
+}
+
+#pic_titles {
+    position: absolute;
+    right:0px;
+    top:0px;
+       /* color: black; */
+}
+
+/* #pic_titles > a > h2{
+} */
+.pic_head{
+    background-color: grey;
+
+}
+
+#pic_titles h2{
+    /* float: right; */
+    color: black;
+}
+
+footer{
+       
+    background-color: black;
+    color: white;
+    margin-top: 10px;;
+    padding-top: 0px;
+    padding-bottom: 0px;;
+}
+
+
+/*------------------------ Kids products page start ------------------------------------------ */
+
+
+#kids_section{
+    border:2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+aside{
+    display: flex;
+    border:2px solid red;
+}
+aside h4{
+    text-align: center;
+    margin-top: 10px;;
+}
+#kidsform{
+    margin-top: 45px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#kids_banner{
+    margin: auto;
+    margin-top: 20px;
+}
+
+#kids_banner > div{
+    margin-top: 40px;
+
+}
+#kids_leftside{
+
+    display:  none;
+}
+#kids_allprod{
+    border:2px solid blue;
+    margin: 10px;;
+    display: grid;
+   grid-template-columns: auto auto auto;
+   
+    
+}
+.kids_card{
+    position: relative;
+    border: .1px solid black;
+    margin: 5px;
+    padding: 5px;
+    height: 500px;
+    width: 274px;
+}
+.kids_card > img{
+    /* border:2px solid red; */
+    
+    height:250px;
+    width:260px;
+}
+/* .kids_card  h6{
+    text-align: center;
+    padding: 5px;
+    margin-top: 8px;
+    /* border: 2px solid green; 
+    height: 70px;
+    width: 257px;
+} */
+
+.kids_card a{
+    display:block;
+    text-align: center;
+    
+    bottom:10px;
+}
+
+.kids_card  p{
+    margin-left: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;;
+    font-family: Targetica, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+
+.add_to_cart{
+    position: absolute;
+    left:25px;
+}
+
+
+
+
+/*  ******************** kids page end********** */
+
+
+/*  ******************** Women page start********** */
+
+
+
+#women_section{
+    border:2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+aside{
+    display: flex;
+    border:2px solid red;
+}
+aside h4{
+    text-align: center;
+    margin-top: 10px;;
+}
+#womenform{
+    margin-top: 45px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#women_banner{
+    margin: auto;
+    margin-top: 20px;
+}
+
+#women_banner > div{
+    margin-top: 40px;
+
+}
+#women_leftside{
+
+    display:  none;
+}
+
+#women_allprod{
+    border:2px solid blue;
+    margin: 10px;;
+    display: grid;
+   grid-template-columns: auto auto auto;
+   
+    
+}
+.women_card{
+    position: relative;
+    border: .1px solid black;
+    margin: 5px;
+    padding: 5px;
+    height: 500px;
+    width: 274px;
+}
+.women_card > img{
+    /* border:2px solid red; */
+    
+    height:250px;
+    width:260px;
+}
+
+
+.women_card a{
+    display:block;
+    text-align: center;
+    
+    bottom:10px;
+}
+
+.women_card  p{
+    margin-left: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;;
+    font-family: Targetica, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+
+.add_to_cart{
+    position: absolute;
+    left:25px;
+}
+
+.add_to_cart:hover{
+    background-color: rgb(131, 135, 163);
+}
+
+
+/*  ******************** Women page end********** */
+
+
+
+/*  ******************** Men page start********** */
+
+
+
+#men_section{
+    border:2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+aside{
+    display: flex;
+    border:2px solid red;
+}
+aside h4{
+    text-align: center;
+    margin-top: 10px;;
+}
+#menform{
+    margin-top: 45px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#men_banner{
+    margin: auto;
+    margin-top: 20px;
+}
+
+#men_banner > div{
+    margin-top: 40px;
+
+}
+#men_leftside{
+
+    display:  none;
+}
+
+#men_allprod{
+    border:2px solid blue;
+    margin: 10px;;
+    display: grid;
+   grid-template-columns: auto auto auto;
+   
+    
+}
+.men_card{
+    position: relative;
+    border: .1px solid black;
+    margin: 5px;
+    padding: 5px;
+    height: 500px;
+    width: 274px;
+}
+.men_card > img{
+    /* border:2px solid red; */
+    
+    height:250px;
+    width:260px;
+}
+
+
+.men_card a{
+    display:block;
+    text-align: center;
+    
+    bottom:10px;
+}
+
+.men_card  p{
+    margin-left: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;;
+    font-family: Targetica, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+
+.add_to_cart{
+    position: absolute;
+    left:25px;
+}
+
+
+
+/*  ******************** Men page end********** */
+
+
+/*  ******************** View Product page start********** */
+#prod_page_h2{
+    color:black;
+}
+
+
+#view_prod_container{
+    height:500px;
+    width:800px;
+    margin: auto;
+    border: 2px solid red;
+    display: flex;
+}
+
+#prod_picture{
+    order: 1;
+    
+}
+#prod_picture img{
+    height:400px;
+    width:400px;
+    margin: 25px;;
+}
+#prod_details{
+    order: 2;
+    /* border: 2px solid black; */
+    height:400px;
+    width:350px;
+    margin: 25px;;
+    
+   
+}
+
+
+#prod_price{
+    font-weight: bolder;
+    margin-top: 42px;
+    margin-left: 45px;
+    font-size: 35px;
+}
+#prod_qty{
+    margin-top:60px;
+    margin-left:45px;
+    width:90px;
+    font-size: 20px;
+}
+#add_cart_btn > img{
+    margin-top: 43px;
+    margin-left: 20px;
+    /* width:100px; */
+   
+}
+
+
+
+/*  ******************** View Product page end********** */
+
+
+/*  ******************** Cart page start********** */
+
+#cart_container{
+    margin: auto;
+    /* height:500px; */
+    width:1200px;
+    border:2px solid red;
+}
+
+.cart_prod_card{
+    margin: auto;
+    margin-top: 30px;;
+    margin-bottom: 30px;
+    position: relative;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    /* grid-gap:10px; */
+    height:400px;
+    width:1025px;
+    border:2px solid black;
+}
+
+.cart_prod_pic{
+    border:2px solid red;
+    padding: 10px;;
+    margin:20px;
+    
+}
+.cart_prod_name_details{
+    border:2px solid green;
+    padding: 10px;;
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.cart_prod_price{
+    padding: 10px;;
+    margin:20px;
+    border:2px solid purple;
+    color: black;
+
+}
+
+
+.cart_prod_name_details h3{
+    padding:10px;
+    margin:10px;
+}
+.cart_prod_name_details .cart_prod_qty{
+    padding:10px;
+    margin:10px;
+}
+
+.cart_prod_qty .label{
+    font-weight: bold;
+}
+.cart_prod_qty .mySelect{
+    width:100px;
+    margin-left: 15px;
+    border:2px solid;
+}
+.cart_prod_name_details .delete_btn{
+    padding:10px;
+    margin:10px;
+}
+
+.cart_prod_price{
+    text-align: center;
+    margin: auto;
+}
+
+#cart_bottom{
+    border: 2px solid red;
+    font-size: 25px;
+    height: 150px;
+    width: 1200px;
+    color: black;
+    text-align: right;
+    padding-right: 110px;
+    margin: auto;
+    /* margin-top: 10px;;
+    margin-bottom: 10px;; */
+}
+
+#total{
+    margin-top: 20px;;
+    margin-bottom: 10px;;
+    
+}
+
+#checkout{
+    margin-top: 10px;;
+    margin-bottom: 20px;;
+}
+
+
+
+
+
+/*  ******************** cart  page end********** */
