@@ -14,7 +14,8 @@ btn.addEventListener("click", prod_disp);
 
 function prod_disp() {
 
-    fetch("../siva_fashion/products.json")
+    fetch("./prod/products.json")
+    // fetch("../siva_fashion/products.json")
         .then(response => response.json())
         .then((data) => {
             console.log(data)
